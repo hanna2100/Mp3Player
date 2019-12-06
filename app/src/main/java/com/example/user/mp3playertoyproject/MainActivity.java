@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements MusicAdapter.OnLi
         setContentView(R.layout.activity_main);
         setTitle("iriver");
 
+        Log.d("TAG", "onCreate()");
+
         //sdcard 외부접근권한 설정
         ActivityCompat.requestPermissions(this
                 , new String[]{Manifest.permission.READ_EXTERNAL_STORAGE
